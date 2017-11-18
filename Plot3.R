@@ -1,5 +1,5 @@
 # read data from file
-data_all <- read.table("household_power_consumption.txt", header = T, sep=";", 
+data_all <- read.table("household_power_consumption.txt", header = T, sep=";", na.string="?",
                        colClasses = c("character","character"))
 
 # only data from 2007-02-01 and 2007-02-02 are used.
